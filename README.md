@@ -3,7 +3,28 @@
 ## Pasos previos
 
 1. Levantar una instancia EC2 en AWS, con al menos 2 GB de RAM. Levantarla instalando un Ubuntu 18.04. Esta será nuestra máquina que usaremos como instancia **Servidor**.
-2. Una vez levantada la instancia, conectarnos a ella por SSH.
+2. Una vez levantada la instancia, conectarnos a ella por SSH (ver siguiente punto).
+
+## Conexión por SSH
+
+Copiamos el fichero .pem descargado de AWS al directorio `~/.ssh/`. Le ponemos de nombre, por ejemplo `nagios.pem`. Por tanto, asumiento que tenemos el fichero en `~/.ssh/nagios.pem`, lo siguiente quedaría como sigue.
+
+Editamos el fichero `~/.ssh/config` y añadimos:
+
+```
+Host nagios-server
+    User ubuntu
+    Hostname <IP pública en AWS>
+    IdentityFile ~/.ssh/nagios.pem
+```
+
+Guardamos el fichero y entonces:
+
+```
+ssh nagios-server
+```
+
+Y ya estaremos dentro de la máquina de AWS.
 
 ## Instalación de requisitos
 
