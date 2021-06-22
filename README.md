@@ -2,7 +2,7 @@
 
 ## Pasos previos
 
-1. Levantar una instancia EC2 en AWS, con al menos 2 GB de RAM. Levantarla instalando un Ubuntu 18.04. Esta será nuestra máquina que usaremos como instancia **Servidor**.
+1. Levantar una instancia EC2 en AWS, con al menos 2 GB de RAM. Levantarla instalando un Ubuntu 20.04. Esta será nuestra máquina que usaremos como instancia **Servidor**.
 2. Una vez levantada la instancia, conectarnos a ella por SSH (ver siguiente punto).
 
 ## Conexión por SSH
@@ -62,7 +62,7 @@ Las últimas releases se puede ver en:
 Descargamos la última versión:
 
 ```
-wget <https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.3.tar.gz
+wget <https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.6.tar.gz
 ```
 
 ## Compilación de Nagios
@@ -75,7 +75,7 @@ tar xpf nagios-*.tar.gz
 Entrar al directorio donde se ha descomprimido:
 
 ```
-cd nagios-4.4.3/
+cd nagios-4.4.6/
 ```
 
 Preparar el código fuente para su compilación:
