@@ -62,7 +62,7 @@ Las últimas releases se puede ver en:
 Descargamos la última versión:
 
 ```
-wget <https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.6.tar.gz
+wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.6.tar.gz
 ```
 
 ## Compilación de Nagios
@@ -118,7 +118,7 @@ sudo usermod -a -G nagcmd www-data
 Descargar el paquete:
 
 ```
-cd .. && wget https://nagios-plugins.org/download/nagios-plugins-2.2.1.tar.gz
+cd .. && wget http://nagios-plugins.org/download/nagios-plugins-2.2.1.tar.gz
 ```
 
 Descomprimir el fichero:
