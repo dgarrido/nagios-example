@@ -323,10 +323,10 @@ Volvemos a editar el fichero `hosts.cfg` con, por ejemplo:
 ```
 define service{
   use                     generic-service
-  host_name               webserver.com
+  host_name               webserver
   service_description     http
   check_command           check_http
-  check_period            24×7
+  check_period            24x7
   check_interval          5
   max_check_attempts      2
   normal_check_interval   5
